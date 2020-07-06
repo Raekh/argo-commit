@@ -15,5 +15,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bin": "cli.js"
+  "bin": "cli.js",
+  "publishConfig": { 
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
