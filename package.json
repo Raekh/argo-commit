@@ -1,0 +1,19 @@
+{
+  "name": "better-commit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "index.js": "0.0.3",
+    "inquirer": "^7.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "add 1 2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bin": "cli.js"
+}
