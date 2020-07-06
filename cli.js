@@ -31,7 +31,7 @@ exec("git rev-parse --is-inside-work-tree 2>/dev/null", (error, stdout, stderr)=
         commit().then(type => {
             var branchName = stdout;
             var commitMessage = `[${type}] ${branchName}- ${message}`
-            console.log(`Command : ${commitMessage}`)
+            console.log(`%cmessage : %c"${commitMessage}"`,"font-weight:bold","font-weight:regular")
             confirm().then(response => {
                 if(response == true){
                     exec (`git commit -m '${commitMessage}'`, (error,stdout,stderr) => {
