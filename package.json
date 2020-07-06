@@ -1,22 +1,29 @@
 {
   "name": "argo-commit",
   "version": "1.0.0",
-  "description": "",
+  "description": "Commit for argo members",
   "main": "index.js",
   "dependencies": {
     "child_process": "^1.0.2",
-    "index.js": "0.0.3",
+    "index.js": "^0.0.3",
     "inquirer": "^7.3.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "add 1 2"
+    "test": "argo-commit \"gathering the infinity stones\""
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bin": "cli.js",
-  "publishConfig": { 
-    "registry": "https://npm.pkg.github.com/"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akainezumi/argo-commit.git"
+  },
+  "keywords": [
+    "commit",
+    "git"
+  ],
+  "author": "AkaiNezumi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akainezumi/argo-commit/issues"
+  },
+  "homepage": "https://github.com/akainezumi/argo-commit#readme"
 }

@@ -34,10 +34,22 @@ exec("git rev-parse --is-inside-work-tree 2>/dev/null", (error, stdout, stderr)=
             console.log(`Command : ${commitMessage}`)
             confirm().then(response => {
                 if(response == true){
-                    exec (`git commit -m '${commitMessage}'`)
+                    exec (`git commit -m '${commitMessage}'`, (error,stdout,stderr) => {
+                        if(error){
+                            console.log(error);
+                            return;
+                        }
+                        if(stderr){
+                            console.log(stderr)
+                            return;
+                        }
+                        if(stdout){
+                            console.log(stdout);
+                            return;
+                        }
+                    })
                 }
             });
-            return;
         });
     })
 })
