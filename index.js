@@ -1,10 +1,27 @@
 var inquirer = require("inquirer")
 
+var choices = [{
+    type: 'list',
+    name: 'action',
+    message: "What do you wish to do ?",
+    choices: [
+        {
+            name:'Commit',
+            value:'commit'
+        },
+        {
+            name:'Copy commit message to clipboard',
+            value:'copy'
+        }
+    ]
+}]
+
 var commitType = [{
     type: 'list',
     name: 'type',
     message: "What does your commit contain ?",
-    choices: [{
+    choices: [
+        {
             name: '[+] New features',
             value: '+'
         },
@@ -30,6 +47,16 @@ var confirmCommit = [{
     default: false
 }]
 
+function choice(){
+    return new Promise((resolve,reject)=>{
+        inquirer
+        .prompt(choices)
+        .then(choice => {
+            resolve(choice.action)
+        })
+    })
+}
+
 function commit() {
     return new Promise((resolve,reject) => {
         inquirer
@@ -54,5 +81,6 @@ function confirm(){
 
 module.exports = {
     commit,
-    confirm
+    confirm,
+    choice
 }
