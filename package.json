@@ -29,5 +29,5 @@
     "url": "https://github.com/akainezumi/argo-commit/issues"
   },
   "homepage": "https://github.com/akainezumi/argo-commit#readme",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "publishConfig": { "registry": "https://npm.pkg.github.com/@akainezumi" }
 }
