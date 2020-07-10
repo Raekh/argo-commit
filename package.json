@@ -1,6 +1,6 @@
 {
   "name": "argo-commit",
-  "version": "1.0.3",
+  "version": "1.0.4",
 
   "description": "Commit for argo members",
   "main": "index.js",
