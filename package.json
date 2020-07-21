@@ -1,7 +1,6 @@
 {
   "name": "argo-commit",
-  "version": "1.0.6",
-
+  "version": "1.0.7",
   "description": "Commit for argo members",
   "main": "index.js",
   "dependencies": {
@@ -29,5 +28,7 @@
     "url": "https://github.com/akainezumi/argo-commit/issues"
   },
   "homepage": "https://github.com/akainezumi/argo-commit#readme",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/@akainezumi" }
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@akainezumi"
+  }
 }

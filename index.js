@@ -1,7 +1,7 @@
 var inquirer = require("inquirer")
 
 var choices = [{
-    type: 'list',
+    type: 'checkbox',
     name: 'action',
     message: "What do you wish to do ?",
     choices: [
@@ -13,7 +13,13 @@ var choices = [{
             name:'Copy commit message to clipboard',
             value:'copy'
         }
-    ]
+    ],
+    validate: function(answer){
+        if(answer.length < 1){
+            return 'You must choose at least one choice.'
+        }
+        return true;
+    }
 }]
 
 var commitType = [{
