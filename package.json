@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "child_process": "^1.0.2",
-    "clipboardy": "^2.3.0",
+    "clipboardy": "^3.0.0",
     "index.js": "^0.0.3",
     "inquirer": "^7.3.0",
     "yargs": "^15.4.0"
